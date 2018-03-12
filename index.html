@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <meta charset="UTF-8">
+    <title>Tundra app</title>
+    <link rel="stylesheet" href="/css/tinyshell.min.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <style>
+        .top {
+            text-align: left;
+            margin: 0;
+            background: #1dcbf2;
+            width: 100%;
+        }
+
+        .top h1 {
+            letter-spacing: 1px;
+        }
+
+        .bottom {
+            background: white;
+        }
+
+        .card {
+            box-shadow: none;
+            padding: 10px;
+        }
+
+        .card img {
+            width: 100%;
+        }
+
+        .card h1 {
+            font-weight: 300;
+        }
+
+        .bar .tab.current {
+            color: #1dcbf2;
+        }
+        
+        .logo{
+            width:50%;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header class="bar top">
+        <img class="logo" src="img/logo.png" alt="Logo">
+    </header>
+
+    <div class="app">
+        <div class="page active" id="cards_page">
+            <section class="content" id="cards_home">
+
+            </section>
+        </div>
+
+        <div class="page" id="fav_list">
+            <ul class="list-view">
+
+            </ul>
+        </div>
+
+        <nav class="bar bottom">
+            <div class="tab current icon home" id="home_btn"> Home</div>
+            <div class="tab icon star" id="fav_btn">Favourites</div>
+        </nav>
+    </div>
+
+
+    <script src="js/tinyshell.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
